@@ -1,0 +1,326 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50; /* Dark Green */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-left p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+}
+
+.header-right a {
+    padding: 10px 20px;
+    background-color: #FF5733; /* Red */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.header-right a:hover {
+    background-color: #C54C2F;
+}
+
+/* Main Content Styling */
+main {
+    padding: 40px;
+    margin: 0 auto; /* Center content */
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+
+/* Event List Container */
+.event-list-container {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Event Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table td {
+    background-color: #F9F9F9;
+}
+
+table tr:nth-child(even) td {
+    background-color: #F1F1F1;
+}
+
+/* Button Styling */
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1E2A38;
+}
+
+/* Action Links Styling */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: lightskyblue;
+    color: blue;
+}
+
+/* Edit Form */
+.edit-event {
+    padding: 5px;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+.edit-event label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.edit-event input,
+.edit-event textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.edit-event textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Login and Signup Form */
+.login, .signup {
+    text-align: center;
+}
+
+h1.login, h1.signup {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button for Form Submission */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555;
+}
+
+p a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-left, .header-right {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    /* Button Styling */
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+
+.event-rsvp {
+    text-align: center;
+}
+
+#delete-resv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#delete-text {
+    text-align: center;
+}
+
+#cancel-link {
+    display: block;
+    text-align: center;
+}
+
+#cancel-link:hover {
+    background-color: #f9f9f9;
+    color: red;
+} 
+
+#change-pw {
+    text-align: center;
+    margin: 5px;
+}
